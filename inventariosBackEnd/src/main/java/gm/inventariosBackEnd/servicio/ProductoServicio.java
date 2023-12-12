@@ -34,8 +34,8 @@ public class ProductoServicio implements IProductoServicio{
      * @param producto
      */
     @Override
-    public void guardaProducto(Producto producto) {
-        this.productoRepositorio.save(producto);
+    public Producto guardaProducto(Producto producto) {
+        return this.productoRepositorio.save(producto);
     }
 
     /**
